@@ -1,19 +1,20 @@
 In Python, there are several libraries available for scaling data, commonly used in machine learning and data preprocessing. These libraries help ensure that features are on a similar scale, which is important for many algorithms. Here are the top libraries for scaling data:
 
-### 1. **scikit-learn** (`sklearn.preprocessing`)
+### 1. **NumPy**
+While **NumPy** doesn't have specialized functions for scaling, it allows you to perform custom scaling using simple array operations.
+
+
+### 2. **Pandas**
+Although **Pandas** does not provide dedicated scaling functions, you can scale data using basic operations on DataFrames.
+
+
+### 3. **scikit-learn** (`sklearn.preprocessing`)
 The `scikit-learn` library provides several utilities for scaling and normalizing data. It is one of the most widely used libraries for machine learning in Python.
 
 - **StandardScaler**: Standardizes features by removing the mean and scaling to unit variance (Z-score normalization).
 - **MinMaxScaler**: Scales features to a given range, usually between 0 and 1.
 - **MaxAbsScaler**: Scales each feature by its maximum absolute value (useful for data that is already centered at zero).
 - **RobustScaler**: Scales features using statistics that are robust to outliers.
-
-### 2. **Pandas**
-Although **Pandas** does not provide dedicated scaling functions, you can scale data using basic operations on DataFrames.
-
-
-### 3. **NumPy**
-While **NumPy** doesn't have specialized functions for scaling, it allows you to perform custom scaling using simple array operations.
 
 
 ### 4. **TensorFlow** (`tensorflow.data` and `tf.image`)
